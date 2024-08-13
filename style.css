@@ -1,0 +1,158 @@
+* {
+  padding:0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg)
+  }
+
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background-color:black;
+  perspective: 1500px;
+  perspective-origin:top;
+}
+
+
+
+.cubo{
+  height:200px;
+  width:200px;
+  position:relative;
+  transform-style:preserve-3d;
+  animation: rotar 5s infinite linear;
+}
+
+
+#cara1{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:red;
+  transform:translateZ(-100px)
+}
+
+
+#cara2{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:green;
+  transform:translateZ(100px)
+}
+
+#cara3{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:blue;
+  transform:translateX(100px) rotateY(90deg)
+}
+
+#cara4{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:yellow;
+  transform:translateX(-100px) rotateY(90deg)
+}
+
+#cara5{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:pink;
+  transform:translateY(100px) rotateX(90deg)
+}
+
+#cara6{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:orange;
+  transform:translateY(-100px) rotateX(90deg)
+}
+
+/* EJEMPLO ECHO EN CLASE */
+
+/* 
+@keyframes colorear {
+
+  from {
+    background-color:#0079a1;
+  }
+  to {
+    background-color:orange;
+  }
+} */
+
+
+/* .box {
+  width:100px;
+  height:100px;
+  background-color:aqua;
+  animation-name: colorear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s
+  background-color:blue;
+  transition: all 3s ease-in-out 
+  transform: rotate(45deg) 
+} */
+
+
+ 
+ /* button {
+  background-color: #0077FF;
+  color:white;
+  padding: 10px 20px;
+  border: none;
+  border-radius:5px;
+  transition: background-color 0.5s ease-out;
+}
+
+button:hover {
+  background-color: rgb(255,140,0);
+} */
+
+
+
+
+/* .box2 {
+  width:100px;
+  height:100px;
+  background-color:red;
+  transition: all 2s ;
+  
+}
+
+.box2:hover {
+  transform:rotate(30deg) scale(1.5)
+} */
+/* p {
+  font-size: 24px ;
+  color:blue;
+  font-family:'Arial';
+  transition: all 3s ease-in 1s
+
+
+}
+
+p:hover {
+  color:red;
+  text-transform:capitalize;
+}
+ */
+
+
